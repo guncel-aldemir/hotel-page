@@ -46,16 +46,68 @@
 
            }
         }
-        .navListToggle{
-            position: absolute;
-            inset:0;
-            background: #333;
-            width: 200px;
-            height: 100vh;
-            z-index: 99;
-            
+        // .navListBackground{
+        //     position: absolute;
+        //     left: 0;
+        //     background: #333;
+        //     width: 300px;
+        //     height: 100vh;
+        //     z-index: 99;
+        //     transition: ease-in ;
+        //     transition-duration: 6ms;
+        //     transition-delay: 1s;
+        //     top: -10px;
            
-        }
+        //     .navListToggle{
+                
+        //       display: flex;
+        //       flex-direction: column;
+        //       align-items: flex-start;
+        //       justify-content: flex-start;
+        //       width: 100%;
+              
+
+        //        &>:first-child{
+        //         align-self: flex-end;
+                
+        //         padding: 6px;
+        //        }
+        //        .navListToggleItems{
+        //         list-style-type: none;
+        //         padding: 0;
+        //         width: 70%;
+        //     &>li{
+        //         padding: 20px;
+        //         border-bottom: 0.6px solid #e3e3e3;
+                
+        //         &:hover{
+        //             border-bottom: 0.8px solid #dba765;
+        //             width: fit-content;
+        //             cursor: pointer;
+        //         }
+        //         &>a{
+        //             font-size: 14px;
+        //             line-height: 1.4285714286;
+        //             font-weight: 500;
+        //             text-transform: uppercase;
+        //             font-family: 'Seasona Body', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+        //             color: #e3e3e3;
+        //             text-decoration: none;
+                    
+        //             &:hover{
+        //                 color: #dba765;
+                        
+                       
+        //             }
+        //         }
+        //     }
+        //        }
+             
+        //     }
+
+        // }
+        
+      
     }
 
     nav{
@@ -85,6 +137,9 @@
                 @extend .navListSide;
                 gap: 30px;
                 list-style-type: none;
+                &>li:hover{
+                    border-bottom: 1px solid #dba765;
+                }
                 &>li>a{
                    text-decoration: none;
                    font-size: 14px;
@@ -129,6 +184,66 @@
             border: none;
             
         }
+        .navListBackground{
+            position: absolute;
+            left: 0;
+            background: #333;
+            width: 300px;
+            height: 100vh;
+            z-index: 99;
+            transition: ease-in ;
+            transition-duration: 6ms;
+            transition-delay: 1s;
+            top: -10px;
+           
+            .navListToggle{
+                
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              width: 100%;
+              
+
+               &>:first-child{
+                align-self: flex-end;
+                
+                padding: 6px;
+               }
+               .navListToggleItems{
+                list-style-type: none;
+                padding: 0;
+                width: 70%;
+            &>li{
+                padding: 20px;
+                border-bottom: 0.6px solid #e3e3e3;
+                
+                &:hover{
+                    border-bottom: 0.8px solid #dba765;
+                    width: fit-content;
+                    cursor: pointer;
+                }
+                &>a{
+                    font-size: 14px;
+                    line-height: 1.4285714286;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    font-family: 'Seasona Body', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+                    color: #e3e3e3;
+                    text-decoration: none;
+                    
+                    &:hover{
+                        color: #dba765;
+                        
+                       
+                    }
+                }
+            }
+               }
+             
+            }
+
+        }
     }
     nav{
         &::before{
@@ -170,6 +285,66 @@
              border: none;
              
          }
+         .navListBackground{
+            position: absolute;
+            left: 0;
+            background: #333;
+            width: 300px;
+            height: 100vh;
+            z-index: 99;
+            transition: ease-in ;
+            transition-duration: 6ms;
+            transition-delay: 1s;
+            top: -10px;
+           
+            .navListToggle{
+                
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              width: 100%;
+              
+
+               &>:first-child{
+                align-self: flex-end;
+                
+                padding: 6px;
+               }
+               .navListToggleItems{
+                list-style-type: none;
+                padding: 0;
+                width: 70%;
+            &>li{
+                padding: 20px;
+                border-bottom: 0.6px solid #e3e3e3;
+                
+                &:hover{
+                    border-bottom: 0.8px solid #dba765;
+                    width: fit-content;
+                    cursor: pointer;
+                }
+                &>a{
+                    font-size: 14px;
+                    line-height: 1.4285714286;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    font-family: 'Seasona Body', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+                    color: #e3e3e3;
+                    text-decoration: none;
+                    
+                    &:hover{
+                        color: #dba765;
+                        
+                       
+                    }
+                }
+            }
+               }
+             
+            }
+
+        }
      }
      nav{
          &::before{
@@ -215,6 +390,66 @@
                 display: none;
              }
          }
+         .navListBackground{
+            position: absolute;
+            left: 0;
+            background: #333;
+            width: 290px;
+            height: 100vh;
+            z-index: 99;
+            transition: ease-in ;
+            transition-duration: 6ms;
+            transition-delay: 1s;
+            top: -10px;
+           
+            .navListToggle{
+                
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              width: 100%;
+              
+
+               &>:first-child{
+                align-self: flex-end;
+                
+                padding: 6px;
+               }
+               .navListToggleItems{
+                list-style-type: none;
+                padding: 0;
+                width: 70%;
+            &>li{
+                padding: 20px;
+                border-bottom: 0.6px solid #e3e3e3;
+                
+                &:hover{
+                    border-bottom: 0.8px solid #dba765;
+                    width: fit-content;
+                    cursor: pointer;
+                }
+                &>a{
+                    font-size: 14px;
+                    line-height: 1.4285714286;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    font-family: 'Seasona Body', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+                    color: #e3e3e3;
+                    text-decoration: none;
+                    
+                    &:hover{
+                        color: #dba765;
+                        
+                       
+                    }
+                }
+            }
+               }
+             
+            }
+
+        }
      }
      nav{
          &::before{

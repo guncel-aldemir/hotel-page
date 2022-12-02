@@ -1,0 +1,116 @@
+.backgroundSide{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   .main-text{
+    color: #fff;
+    &>a{
+        color: #fff;
+        border: 1px solid #dba765;
+        text-decoration: none;
+        background-color: #dba765;
+        padding: 8px;
+       
+        &:hover{
+            color: #dba765;
+            background-color: #fff;
+            border: 1px solid #fff;
+        }
+    }
+    h3{
+    font-size:48px;
+    line-height: 1.375;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Seasona Body', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    position: relative;
+    
+    &::before,&::after{
+        content: '';
+        position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+
+    }
+    &::before{
+        background:black;
+        
+      animation: typewriter 4s steps(24) infinite;
+    }
+    &::after{
+        width: .125rem;
+        background: #fff;
+        animation: typewriter 4s steps(24) infinite,
+        blink 4s steps(24) forwards,
+    }
+   @keyframes typewriter {
+    to{
+        left:100%
+    }
+   }
+   @keyframes blink {
+    to{
+        background: transparent;
+    }
+   }
+    }
+    .movement{
+position: relative;
+
+&>span{
+    position: relative;
+  display: inline-block;
+  
+  font-size:28px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: 1s;
+  margin-bottom: 20px;
+  &:nth-child(5),&:nth-child(9){
+    margin-right: 15px;
+  }
+  
+}
+@keyframes flip {
+     to {
+      transform: rotateY(360deg) 
+    }
+  }}
+   }
+}
+@media (min-width:375px) and (max-width:576px){
+  .backgroundSide{
+    display: flex;
+    .main-text{
+      &>h3{
+        font-size: 24px;
+      }
+      .movement{
+        span{
+          font-size: 18px;
+        }
+      }
+    }
+    
+  }
+}
+@media (min-width:260px) and (max-width:374.9px){
+  .backgroundSide{
+    display: flex;
+    .main-text{
+      &>h3{
+        font-size: 18px;
+      }
+      .movement{
+        span{
+          font-size: 14px;
+        }
+      }
+    }
+    
+  }
+}
