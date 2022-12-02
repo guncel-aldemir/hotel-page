@@ -1,0 +1,234 @@
+.navbarSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    .headerUpper{
+        @extend .navbarSide;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1290px;
+        .logoSide{
+            display: block;
+        }
+        .headerAddress{
+            @extend .headerUpper;
+            justify-content: flex-start;
+            width: auto;
+            font-family: 'Seasona Body', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+            max-width: 217px;
+            font-size: 14px;
+        }
+        .bookSide{
+           @extend .headerUpper;
+           gap: 10px;
+           width: auto;
+           &>span{
+            border-right: 1px solid #e3e3e3 ;
+           padding-right: 6px;
+           color: #dba765;
+           font-family: 'Seasona Body', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+           }
+           .bookLinks{
+            font-weight: 400px;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.7142857143;
+            text-decoration: none;
+            font-family: 'Seasona Body', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+            &:hover{
+                font-weight: 500;
+                color: #dba765;
+            }
+
+           }
+        }
+        .navListToggle{
+            position: absolute;
+            inset:0;
+            background: #333;
+            width: 200px;
+            height: 100vh;
+            z-index: 99;
+            
+           
+        }
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        
+        padding: 10px;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            
+            border-top: .3px solid ;
+            color: #e3e3e3;
+            width:1172px
+           
+        }
+        .logoNavside{
+            display: none;
+        }
+        .navListSide{
+            display: flex;
+            flex-direction: row;
+            &>ul{
+                @extend .navListSide;
+                gap: 30px;
+                list-style-type: none;
+                &>li>a{
+                   text-decoration: none;
+                   font-size: 14px;
+                    line-height: 1.4285714286;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    font-family: 'Seasona Body', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+                   &:hover{
+                    color: #dba765;
+                   }
+                }
+            }
+        }
+        .navbarToggle{
+           display: none;
+        }
+       
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+   .navbarSide{
+    display: flex;
+  
+    .headerUpper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 1px solid #e3e3e3;
+        .headerAddress{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 417px;
+            border: none;
+        }
+        .logoSide{
+            display: none;
+        }
+        .bookSide{
+            width:auto;
+            border: none;
+            
+        }
+    }
+    nav{
+        &::before{
+            display: none;
+        }
+        .logoNavside{
+            display: block;
+        }
+    .navListSide{
+    display:none;
+    }
+    .navbarToggle{
+        display: block;
+    }
+    }
+   }
+}
+@media (min-width:576px) and (max-width:767.9px){
+    .navbarSide{
+     display: flex;
+   
+     .headerUpper{
+         display: flex;
+         justify-content: center;
+         width: 100%;
+         border-bottom: 1px solid #e3e3e3;
+         .headerAddress{
+             display: flex;
+             justify-content: center;
+             width: 100%;
+             max-width: 417px;
+             border: none;
+         }
+         .logoSide{
+             display: none;
+         }
+         .bookSide{
+             width:auto;
+             border: none;
+             
+         }
+     }
+     nav{
+         &::before{
+             display: none;
+         }
+         .logoNavside{
+             display: block;
+         }
+     .navListSide{
+     display:none;
+     }
+     .navbarToggle{
+         display: block;
+     }
+     }
+    }
+ }
+ @media (min-width:270px) and (max-width:575.9px){
+    .navbarSide{
+     display: flex;
+   
+     .headerUpper{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         width: 100%;
+         border-bottom: 1px solid #e3e3e3;
+         .headerAddress{
+             display: flex;
+             justify-content: center;
+             flex-direction: row;
+             width: 100%;
+             max-width: 417px;
+             border: none;
+         }
+         .logoSide{
+             display: none;
+         }
+         .bookSide{
+             width:auto;
+             border: none;
+             &>a{
+                display: none;
+             }
+         }
+     }
+     nav{
+         &::before{
+             display: none;
+         }
+         .logoNavside{
+             display: block;
+         }
+     .navListSide{
+     display:none;
+     }
+     .navbarToggle{
+         display: block;
+     }
+     }
+    }
+ }
