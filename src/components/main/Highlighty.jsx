@@ -6,16 +6,30 @@ import {AiOutlineArrowLeft,AiOutlineArrowRight} from "react-icons/ai"
 const Highlighty = () => {
   const [datas,setDatas]=useState(Experiences)
   const [sliderPhotos,setSliderPhotos]= useState(0);
-
+  let count ;
+  const handleClickPrev= ()=>{
+    count = sliderPhotos === 0 ? 3 : sliderPhotos - 1
+    setSliderPhotos(count)
+  }
+  const handleClickNext = ()=>{
+    count= sliderPhotos === 3 ? 0: sliderPhotos + 1
+    setSliderPhotos(count)
+  }
 useEffect(()=>{
-  
-},[])
+  const auto = setInterval(()=>{
+    handleClickNext()
+  },3000);
+  return ()=>{
+    clearInterval(auto)
+  }
+},[sliderPhotos])
   const bgSliderStyle={
     background:`url(${datas[sliderPhotos].image})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
+    backgroundRepeat:"no-repeat",
     height: "450px",
-    width: "100%",
+    width: "80%",
 
 }
   return <section className="highlighty" >
@@ -25,8 +39,8 @@ useEffect(()=>{
     <h3>highlights</h3>
     <h2>EXPERIENCE THE INFINITY</h2>
     <div className="highlightyTitle-slider" style={bgSliderStyle} >
-      <div className="arrowLeft">
-        <AiOutlineArrowLeft size={30} color="#fff"/>
+      <div className="arrowLeft" onClick={()=>handleClickPrev}>
+        {/* <AiOutlineArrowLeft size={30} color="#fff" /> */}
       </div>
     {
       <div className="information-slider">
@@ -35,8 +49,8 @@ useEffect(()=>{
         <span>{datas[sliderPhotos].hour}</span>
       </div>
     }
-     <div className="arrowRight">
-        <AiOutlineArrowRight size={30} color="#fff"/>
+     <div className="arrowRight" onClick={()=>handleClickNext}>
+        {/* <AiOutlineArrowRight size={30} color="#fff"/> */}
       </div>
     </div>
   </div>

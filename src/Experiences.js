@@ -22,7 +22,7 @@ const experiences = [
     },
     {
         id:4,
-        image:"https://demo2wpopal.b-cdn.net/seasona/wp-content/uploads/2022/05/h1_experience-4.jpg",
+        image:"https://demo2wpopal.b-cdn.net/seasona/wp-content/uploads/2022/05/h1_experience-1.jpg",
         title:"Restaurants & Bars",
         desc:" We provide a great variety of choices in drinks and cocktails as well as distinctive tastes in our restaurant menu! ",
         hour:"Open Daily: 7:30 am - 11:00 pm"

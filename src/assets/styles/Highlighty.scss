@@ -2,8 +2,9 @@
     height: 100vh;
     padding: 20px;
     .backgroundImage{
-        height: 60vh;
+        height: 100vh;
         background-color:#f7f8f2;
+        background-repeat: no-repeat;
         .hightlightyTitle{
             display: flex;
             flex-direction: column;
@@ -38,16 +39,11 @@
                 justify-content: center;
                 width: 100%;
                 position: relative;
-                .arrowLeft,.arrowRight{
-                    width: 50%;
-                    
-                }
-                .arrowLeft{
-                    text-align: start;
-                }
-                .arrowRight{
-                    text-align: end;
-                }
+                background-repeat: no-repeat;
+               
+               
+               
+                
             .information-slider{
                 width: 700px;
                 background-color: #fff;
@@ -96,6 +92,77 @@
                 }
             }
         }
+    }
+}
+@media (min-width:1024px) and (max-width:1200px){
+
+    .highlighty{
+        .backgroundImage{
+            height: 60vh;
+            .hightlightyTitle{
+                &>h3{
+                    font-size: 30px;
+                    font-weight: 400;
+                    font-family: "Seosana Sub";
+                    color: #DBA765;
+                    font-style: oblique;
+                    margin-bottom: 0;
+                }
+                &>h2{
+                    font-family: "Seasona Sub";
+                 
+                    
+                    font-size: 30px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    color: #333;
+                    font-style: normal;
+                }
+                .highlightyTitle-slider{
+                    .information-slider{
+                        width: 500px;
+                        &>h3{
+                            font-family: "Seasona Sub";
+                        font-style: italic;
+                        color:#333;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        }
+                        &>p{
+                            font-family: "Seasona Sub";
+                        font-style: normal;
+                        color:#333;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: -10px;
+                            border: 1px solid #DBA765;
+                            width: 100px;
+                            left: 200px;
+                                     
+                        }
+                        }
+                        &>span{
+                            font-family: "Seasona Sub";
+                        font-style: normal;
+                        color:#333;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        margin-top: 10px;
+                        }
+                    }
+
+                }
+            }
+        } 
     }
 }
 @media (min-width:768px) and (max-width:1023.9px){
