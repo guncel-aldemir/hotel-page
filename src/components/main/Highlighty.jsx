@@ -1,15 +1,20 @@
-import React from "react";
-import { useState } from "react";
+import React,{ useState,useEffect } from "react";
+
 import "../../assets/styles/Highlighty.scss";
 import Experiences from "../../Experiences";
+import {AiOutlineArrowLeft,AiOutlineArrowRight} from "react-icons/ai"
 const Highlighty = () => {
   const [datas,setDatas]=useState(Experiences)
   const [sliderPhotos,setSliderPhotos]= useState(0);
+
+useEffect(()=>{
+  
+},[])
   const bgSliderStyle={
     background:`url(${datas[sliderPhotos].image})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
-    height: "500px",
+    height: "450px",
     width: "100%",
 
 }
@@ -20,14 +25,19 @@ const Highlighty = () => {
     <h3>highlights</h3>
     <h2>EXPERIENCE THE INFINITY</h2>
     <div className="highlightyTitle-slider" style={bgSliderStyle} >
+      <div className="arrowLeft">
+        <AiOutlineArrowLeft size={30} color="#fff"/>
+      </div>
     {
-      <div>
+      <div className="information-slider">
         <h3>{datas[sliderPhotos].title}</h3>
         <p>{datas[sliderPhotos].desc}</p>
         <span>{datas[sliderPhotos].hour}</span>
       </div>
     }
-     
+     <div className="arrowRight">
+        <AiOutlineArrowRight size={30} color="#fff"/>
+      </div>
     </div>
   </div>
 </div>
