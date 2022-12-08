@@ -29,7 +29,7 @@ useEffect(()=>{
     backgroundSize: "cover",
     backgroundRepeat:"no-repeat",
     height: "450px",
-    width: "80%",
+    width: "900px",
 
 }
   return <section className="highlighty" >

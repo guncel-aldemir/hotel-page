@@ -1,0 +1,244 @@
+.roomsSide{
+height: 100vh;
+margin-top: 200px;
+    .roomsSide-Title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &>.subtitle{
+            font-family: "Seasona Sub";
+            font-size: 38px;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 38px;
+            color: #dba765;
+        }
+        &>.title{
+            font-family: "Seasona Heading";
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            text-transform: uppercase;
+            color: #000;
+        }
+        
+        &>a{
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: 24px;
+            letter-spacing: 0;
+            color: #000;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 3px;
+        }
+    }
+    .roomsPhotosSide{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 18px;
+        padding: 20px;
+        .roomLuxuryRoom{
+            position: relative;
+            &>img{
+                width: 100%;
+            }
+            .luxuryRoomText{
+                position: absolute;
+                top: 145px;
+                left: 0;
+                z-index: 999;
+                background-color:#fff;
+                width: 400px;
+                padding: 20px;
+                text-align: center;
+                &>h4{
+                    font-size: 20px;
+                    line-height: 1.3;
+                    margin-bottom: 6px;
+                    font-family: "Seasona Body";
+                    text-transform: uppercase;
+                }
+                &>p{
+                    font-size: 14px;
+                    line-height: 1.5714285714;
+                    color: #8f8f8f;
+                    font-family: "Seasona Body";
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #8f8f8f;
+                }
+                .priceSide{
+                    display: block;
+                    color: red;
+                }
+                .nonactive{
+                    display: none;
+                    
+                }
+               
+                .linkSide{
+                    display: none;
+                    &>a{
+                        text-decoration: none;
+                        padding: 5px 40px;
+                        background-color: #dba765;
+                        color: #fff;
+                       
+                        
+                    }
+                }
+                .active{
+                    display: block;
+                    
+                    &>a{
+                        text-decoration: none;
+                        padding: 5px 40px;
+                        background-color: #dba765;
+                        color: #fff;
+                       
+                        
+                    }
+                }
+                
+            }
+        }
+        .roomRooms{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 18px; 
+            .roomDoubleRoom{
+                position: relative;
+                &>img{
+                    width: 100%;
+                }
+                .doubleRoomText{
+                    position: absolute;
+                    top: 145px;
+                left: 0;
+                z-index: 999;
+                background-color:#fff;
+                width: 400px;
+                text-align: center;
+                padding: 20px;
+                &>h4{
+                    font-size: 20px;
+                    line-height: 1.3;
+                    margin-bottom: 6px;
+                    font-family: "Seasona Body";
+                    text-transform: uppercase;
+                }
+                &>p{
+                    font-size: 14px;
+                    line-height: 1.5714285714;
+                    color: #8f8f8f;
+                    font-family: "Seasona Body";
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #8f8f8f;
+                }
+               
+                .priceSide{
+                    display: block;
+                    color: red;
+                }
+                .nonactive{
+                    display: none;
+                    
+                }
+                .linkSide{
+                    display: none;
+                    &>a{
+                        text-decoration: none;
+                        padding: 5px 40px;
+                        background-color: #dba765;
+                        color: #fff;
+                       
+                        
+                    }
+                }
+                .active{
+                    display: block;
+                    
+                    &>a{
+                        text-decoration: none;
+                        padding: 5px 40px;
+                        background-color: #dba765;
+                        color: #fff;
+                       
+                        
+                    }
+                }
+                
+                
+                }
+            }
+            .roomJuniorRoom{
+                position: relative;
+                &>img{
+                    width: 100%;
+                }
+                .juniorRoomText{
+                    position: absolute;
+                top: 145px;
+                left: 0;
+                z-index: 999;
+                background-color:#fff;
+                width: 400px;
+                text-align: center;
+                padding: 20px;
+                &>h4{
+                    font-size: 20px;
+                    line-height: 1.3;
+                    margin-bottom: 6px;
+                    font-family: "Seasona Body";
+                    text-transform: uppercase;
+                }
+                &>p{
+                    font-size: 14px;
+                    line-height: 1.5714285714;
+                    color: #8f8f8f;
+                    font-family: "Seasona Body";
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #8f8f8f;
+                }
+                .priceSide{
+                    display: block;
+                    color: red;
+                }
+                .nonactive{
+                    display: none;
+                    
+                }
+               
+                .linkSide{
+                    display: none;
+                    &>a{
+                        text-decoration: none;
+                        padding: 5px 40px;
+                        background-color: #dba765;
+                        color: #fff;
+                       
+                        
+                    }
+                }
+                .active{
+                    display: block;
+                    
+                    &>a{
+                        text-decoration: none;
+                        padding: 5px 40px;
+                        background-color: #dba765;
+                        color: #fff;
+                       
+                        
+                    }
+                }
+                
+                }
+            }
+        }
+    }
+}
