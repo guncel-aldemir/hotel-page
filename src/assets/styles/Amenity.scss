@@ -1,0 +1,84 @@
+.amenitySide{
+    height: 130vh;
+    margin-top: 400px;
+    background-color: #f8f8f2;
+    .amenity{
+        padding: 100px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .amenityTitle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &>span{
+                font-family: "Seasona Sub";
+                font-style: italic;
+                color:#dba765;
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 20px;
+                text-transform: capitalize;
+            }
+            &>h3{
+                font-family: "Seasona Sub";
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #000;
+                font-style: normal;
+            }
+        }
+        .amenityCard{
+            display: flex;
+            flex-direction: row;
+           
+            gap: 10px;
+            height: 80vh;
+            .firstCard,.secondCard,.thirdCard,.fourthCard{
+                background-color: #fff;
+                padding: 45px 60px;
+                border-radius: 10px ;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .cardUpper,.cardDown{
+                    text-align: center;
+                }
+                .cardUpper>h4{
+                    font-family: "Seasona Body",Sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 1em;
+                }
+                .cardDown>p{
+                    font-family: "Seasona Body",Sans-serif;
+                    font-size: 16px;
+                    line-height: 1.375;
+                    font-weight: 400;
+                }
+                .cardDown>a{
+                    text-decoration: none;
+                   color: #dba765;
+                   &:hover{
+                    color: #000;
+                   }
+                }
+                
+            }
+            .secondCard,.fourthCard{
+                margin-top: 40px;
+                
+               
+            }
+            .firstCard,.thirdCard{
+                height: 60vh;
+            }
+        }
+        
+    }
+}
