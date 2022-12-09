@@ -242,3 +242,124 @@ margin-top: 200px;
         }
     }
 }
+@media (min-width:768px) and (max-width:820px){
+    .roomsSide>.roomsPhotosSide{
+        .roomLuxuryRoom>.luxuryRoomText{
+            width: 300px;
+        }
+        .roomRooms{
+            .roomDoubleRoom>.doubleRoomText{
+                width: 300px;
+            }
+            .roomJuniorRoom>.juniorRoomText{
+                width: 300px;
+            }
+        } 
+    }
+    
+ 
+}
+@media (min-width:576px) and (max-width:767.9px){
+    .roomsSide>.roomsPhotosSide{
+        .roomLuxuryRoom>.luxuryRoomText{
+            width: 200px;
+        }
+        .roomRooms{
+            .roomDoubleRoom>.doubleRoomText{
+                width: 200px;
+            }
+            .roomJuniorRoom>.juniorRoomText{
+                width: 200px;
+            }
+        } 
+    }
+    
+ 
+}
+@media (min-width:414px) and (max-width:575.9px){
+    .roomsSide
+    {
+        .roomsSide-Title{
+            text-align: center;
+        }
+    .roomsPhotosSide{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        .roomLuxuryRoom>.luxuryRoomText{
+            width: 200px;
+            top: 0;
+        }
+        .roomRooms{
+            .roomDoubleRoom>.doubleRoomText{
+                width: 200px;
+                top: 0;
+            }
+            .roomJuniorRoom>.juniorRoomText{
+                width: 200px;
+                top: 0;
+            }
+        } 
+    }
+    }
+    
+ 
+}
+@media (min-width:375px) and (max-width:413.9px){
+    .roomsSide
+    {
+        .roomsSide-Title{
+            text-align: center;
+        }
+        .roomsPhotosSide{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        .roomLuxuryRoom>.luxuryRoomText{
+            width: 200px;
+            top: 0;
+        }
+        .roomRooms{
+            .roomDoubleRoom>.doubleRoomText{
+                width: 200px;
+                top: 0;
+            }
+            .roomJuniorRoom>.juniorRoomText{
+                width: 200px;
+                top: 0;
+            }
+        } 
+    }
+    }
+    
+ 
+}
+@media (min-width:270px) and (max-width:374.9px){
+    .roomsSide
+    {
+        .roomsSide-Title{
+            text-align: center;
+        }
+        .roomsPhotosSide{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        .roomLuxuryRoom>.luxuryRoomText{
+            width: 200px;
+            top: 0;
+            padding: 0;
+        }
+        .roomRooms{
+            .roomDoubleRoom>.doubleRoomText{
+                width: 200px;
+                top: 0;
+                padding: 0;
+            }
+            .roomJuniorRoom>.juniorRoomText{
+                width: 200px;
+                top: 0;
+                padding: 0;
+            }
+        } 
+    }
+    }
+    
+ 
+}
