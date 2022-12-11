@@ -242,6 +242,16 @@ margin-top: 200px;
         }
     }
 }
+@media (min-width:1024px) and (max-width:1028px){
+    .roomsSide{
+        
+        margin-top: 0;
+        height: 80vh;
+        
+    }
+    
+ 
+}
 @media (min-width:768px) and (max-width:820px){
     .roomsSide>.roomsPhotosSide{
         .roomLuxuryRoom>.luxuryRoomText{

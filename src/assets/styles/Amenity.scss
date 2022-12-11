@@ -26,7 +26,7 @@
                 font-family: "Seasona Sub";
                 font-size: 30px;
                 font-weight: 400;
-                line-height: 20px;
+                line-height: 30px;
                 text-transform: uppercase;
                 color: #000;
                 font-style: normal;
@@ -80,5 +80,224 @@
             }
         }
         
+    }
+   
+}
+@media(min-width:820px) and (max-width:1024px){
+    .amenitySide{
+        height: 70vh;
+        margin-top: 0px;
+        .amenity>.amenityCard{
+            height: 40vh;
+            .firstCard,.thirdCard{
+                height: 30vh;
+            }
+        }
+    }
+}
+@media(min-width:768px) and (max-width:819.9px){
+    .amenitySide{
+        height: 130vh;
+        margin-top: 0px;
+        .amenity{
+            padding: 100px 5px;
+            .amenityCard{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            
+                height: max-content;
+                width: max-content;
+                .firstCard,.thirdCard{
+                    height: max-content;
+                }
+                .secondCard,.fourthCard{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+@media(min-width:576px) and (max-width:767.9px){
+    .amenitySide{
+        height: 100vh;
+        margin-top: 0px;
+        .amenity{
+            padding: 100px 5px;
+            .amenityCard{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            
+                height: max-content;
+                width: max-content;
+                .firstCard,.thirdCard{
+                    height: max-content;
+                }
+                .secondCard,.fourthCard{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+@media(min-width:414px) and (max-width:575.9px){
+    .amenitySide{
+        height: 140vh;
+        margin-top: 200px;
+        .amenityTitle{
+            text-align: center  ;
+            
+        }
+        .amenity{
+            padding: 100px 5px;
+            .amenityCard{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            align-items: center;
+            justify-content: center;
+                height: max-content;
+            
+                .firstCard,.thirdCard{
+                    height: max-content;
+                    width: 70%;
+                    padding: 0; 
+                }
+                .secondCard,.fourthCard{
+                    margin-top: 0;
+                    padding: 0; 
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+@media(min-width:390px) and (max-width:413.9px){
+    .amenitySide{
+        height: 130vh;
+        margin-top: 100px;
+        .amenityTitle{
+            text-align: center  ;
+            
+        }
+        .amenity{
+            padding: 100px 5px;
+            .amenityCard{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            align-items: center;
+            justify-content: center;
+                height: max-content;
+            
+                .firstCard,.thirdCard{
+                    height: max-content;
+                    width: 70%;
+                    padding: 0; 
+                }
+                .secondCard,.fourthCard{
+                    margin-top: 0;
+                    padding: 0; 
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+@media(min-width:375px) and (max-width:389.9px){
+    .amenitySide{
+        height: 160vh;
+        margin-top: 260px;
+        .amenityTitle{
+            text-align: center  ;
+            
+        }
+        .amenity{
+            padding: 100px 5px;
+            .amenityCard{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            align-items: center;
+            justify-content: center;
+                height: max-content;
+            
+                .firstCard,.thirdCard{
+                    height: max-content;
+                    width: 70%;
+                    padding: 0; 
+                }
+                .secondCard,.fourthCard{
+                    margin-top: 0;
+                    padding: 0; 
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+@media(min-width:320px) and (max-width:374.9px){
+    .amenitySide{
+        height: 190vh;
+        margin-top: 260px;
+        .amenityTitle{
+            text-align: center  ;
+            
+        }
+        .amenity{
+            padding: 100px 5px;
+            .amenityCard{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            align-items: center;
+            justify-content: center;
+                height: max-content;
+            
+                .firstCard,.thirdCard{
+                    height: max-content;
+                    width: 70%;
+                    padding: 0; 
+                }
+                .secondCard,.fourthCard{
+                    margin-top: 0;
+                    padding: 0; 
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+@media(min-width:260px) and (max-width:319.9px){
+    .amenitySide{
+        height: 180vh;
+        margin-top: 150px;
+        .amenityTitle{
+            text-align: center  ;
+            
+        }
+        .amenity{
+            padding: 100px 5px;
+            .amenityCard{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: max-content;
+            
+                .firstCard,.thirdCard{
+                    height: max-content;
+                    width: 70%;
+                    padding: 0; 
+                }
+                .secondCard,.fourthCard{
+                    margin-top: 0;
+                    padding: 0; 
+                    width: 70%;
+                }
+            }
+        }
     }
 }
