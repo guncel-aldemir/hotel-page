@@ -1,6 +1,73 @@
 .feedbackCard{
     width: 50%;
-    height: 40vh;
-    border: 1px solid #333;
+    height: 55vh;
+    border: 8px solid #f8f8f8;
     padding: 20px 60px;
+    .feedbackText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(min-width:1024px) and (max-width:1029px){
+    .feedbackCard{
+        height: 30vh;
+    }
+
+}
+@media(min-width:820px) and (max-width:1023.9px){
+    .feedbackCard{
+        height: 35vh;
+        width: 100%;
+    }
+
+}
+@media(min-width:768px) and (max-width:819.9px){
+    .feedbackCard{
+        height: 20vh;
+        width: 100%;
+    }
+
+}
+
+@media(min-width:414px) and (max-width:767.9px){
+    .feedbackCard{
+        height: 20vh;
+        width: 100%;
+        padding: 53px 0;
+    }
+
+}
+@media(min-width:390px) and (max-width:413.9px){
+    .feedbackCard{
+        height: 20vh;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+}
+@media(min-width:375px) and (max-width:389.9px){
+    .feedbackCard{
+        height: 20vh;
+        width: 100%;
+        padding: 56px 0;
+    }
+
+}
+@media(min-width:320px) and (max-width:375.9px){
+    .feedbackCard{
+        height: 30vh;
+        width: 100%;
+        padding: 56px 0;
+    }
+
+}
+@media(min-width:260px) and (max-width:319.9px){
+    .feedbackCard{
+        height: 30vh;
+        width: 100%;
+        padding: 56px 0;
+    }
+
 }

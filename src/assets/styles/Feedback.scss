@@ -27,6 +27,132 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+        position: relative;
+       .circle{
+        position: absolute;
+        bottom: -60px;
+        border-radius:100%;
+        background-color: #dba765;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        &>h3{
+            font-size: 50px;
+            font-family: "Seasona Heading";
+            color: #fff;
+            margin-bottom: 0;
+            &>span{
+                font-size: 20px;
+            }
+        }
+        &>p{
+            color: #fff;
+            font-size:12px;
+        }
+       }
         
+    }
+}
+@media (min-width:768px) and (max-width:819.9px){
+.feedBackSide{
+    height: 50vh;
+    .backgroundFeedback{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0; 
+        .arrow{
+            display: none;
+        }
+        .circle{
+            position: absolute;
+            bottom: -100px;
+        }
+    }
+}
+}
+@media (min-width:414px) and (max-width:767.9px){
+    .feedBackSide{
+        height: 50vh;
+        .backgroundFeedback{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0; 
+            .arrow{
+                display: none;
+            }
+            .circle{
+                position: absolute;
+                bottom: -100px;
+            }
+        }
+    }
+}
+@media (min-width:390px) and (max-width:413.9px){
+    .feedBackSide{
+        height: 50vh;
+        .backgroundFeedback{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0; 
+            .arrow{
+                display: none;
+            }
+            .circle{
+                position: absolute;
+                bottom: -100px;
+            }
+        }
+    }
+}
+@media (min-width:375px) and (max-width:389.9px){
+    .feedBackSide{
+        height: 50vh;
+        .backgroundFeedback{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0; 
+            .arrow{
+                display: none;
+            }
+            .circle{
+                position: absolute;
+                bottom: -100px;
+            }
+        }
+    }
+}
+@media (min-width:320px) and (max-width:375.9px){
+    .feedBackSide{
+        height: 50vh;
+        .backgroundFeedback{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0; 
+            .arrow{
+                display: none;
+            }
+            .circle{
+                position: absolute;
+                bottom: -100px;
+            }
+        }
+    }
+}
+@media (min-width:260px) and (max-width:319.9px){
+    .feedBackSide{
+        height: 50vh;
+        .backgroundFeedback{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 0; 
+            .arrow{
+                display: none;
+            }
+            .circle{
+                position: absolute;
+                bottom: -100px;
+            }
+        }
     }
 }
